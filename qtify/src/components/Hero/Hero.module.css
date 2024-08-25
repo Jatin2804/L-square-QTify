@@ -1,0 +1,51 @@
+.hero {
+  background-color: var(--color-black);
+  height: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+
+.heroheadingfirst,
+.heroheadingsecond {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideIn 1s forwards;
+  position: relative;
+  display: block; /* Ensure headings stack vertically */
+}
+
+.heroheadingsecond {
+  transform: translateX(100%);
+}
+
+.heroheadingfirst:hover,
+.heroheadingsecond:hover {
+  color: #34C94B;
+  font-family: cursive;
+  font-weight: bold;
+  text-shadow: 0 5px 10px rgba(52, 201, 75, 0.7); /* Green shadow at the bottom */
+}
+
+.hero:hover .headphone {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+  transform: scale(1.1); /* Increase size of the headphone */
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(-5deg); }
+  50% { transform: rotate(5deg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
