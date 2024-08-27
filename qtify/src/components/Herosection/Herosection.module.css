@@ -8,11 +8,32 @@
   gap: 30px;
 }
 
+@media screen and (max-width: 768px) {
+  .hero {
+    background-color: var(--color-black);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+  .headphone{
+    margin: 0;
+  }
+  .headings{
+    font-size:x-small;
+    margin:0;
+  }
+}
+
 .heroheadingfirst,
 .heroheadingsecond {
   opacity: 0;
   transform: translateX(-100%);
-  animation: slideIn 1s forwards;
+  animation: slideIn 3s forwards;
+  animation-delay: 5s;
   position: relative;
   display: block; /* Ensure headings stack vertically */
 }

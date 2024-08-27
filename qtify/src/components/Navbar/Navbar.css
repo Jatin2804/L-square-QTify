@@ -1,0 +1,34 @@
+.navbar {
+    background-color: #34C94B;
+    height: 74px;
+    width: 100%;
+    padding: 0px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden; /* Ensure the shadow effect stays within the navbar */
+}
+
+.navbar::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px; /* Height of the shadow effect */
+    background-color: rgba(0, 0, 0, 0.3); /* Shadow color */
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.3);
+    transform: translateX(-50%);
+    transition: all 0.5s ease;
+}
+
+.navbar:hover::after {
+    width: 100%; /* Full width when hovered */
+    box-shadow: 0 0 15px 15px rgba(242, 255, 2, 0.6); /* Enhanced shadow and sparkle effect */
+    background-color: rgba(52, 201, 75, 0.6);
+}
+
+
+  
+  

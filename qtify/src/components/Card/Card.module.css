@@ -1,0 +1,16 @@
+/* ActionAreaCard.module.css */
+
+.cardMedia {
+  filter: brightness(60%);
+  transition: filter 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for all effects */
+}
+
+.cardMedia:hover {
+  filter: brightness(100%);
+ 
+}
+
+/* .card:hover{
+  transform: scale(1.05); 
+  box-shadow: 0 0 20px 0px #34C94B; 
+} */

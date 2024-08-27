@@ -1,0 +1,20 @@
+.searchmobile {
+    width: 100%; /* Full width */
+    display: block;
+    box-sizing: border-box; /* Include padding and borders in width calculation */
+  }
+
+
+.searchdesktop {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .searchmobile {
+    display: none;
+  }
+  .searchdesktop {
+    width: 500px;
+    display: block;
+  }
+}
