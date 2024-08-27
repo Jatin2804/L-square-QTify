@@ -10,7 +10,7 @@ const GridLayout = ({data}) => {
       <Grid container spacing={2}>
         {data.map((cardData) => {
           return (
-            <Grid item xs={6} sm={4} md={3} lg={2} xl={1.5} key={cardData.id}>
+            <Grid item xs={6} sm={4} md={3} lg={2} xl={2} key={cardData.id}>
               <AlbumCard value={cardData.id} cardData={cardData} />
             </Grid>
           );
